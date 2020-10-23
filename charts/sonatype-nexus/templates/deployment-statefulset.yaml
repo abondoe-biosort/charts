@@ -68,6 +68,8 @@ spec:
       {{- if .Values.nexus.priorityClassName }}
       priorityClassName: {{ .Values.nexus.priorityClassName }}
       {{- end }}
+      imagePullSecrets:
+        - name: {{ .Values.nexus.imagePullSecrets.name }}
       containers:
         - name: nexus
           image: {{ .Values.nexus.imageName }}:{{ .Values.nexus.imageTag }}
