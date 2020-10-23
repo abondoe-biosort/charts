@@ -22,7 +22,7 @@ nexus:
   imageName: quay.io/travelaudience/docker-nexus
   imageTag: 3.25.1
   imagePullSecret:
-    name: my-secret
+    name: "my-secret"
   imagePullPolicy: IfNotPresent
   # Uncomment this to scheduler pods on priority
   # priorityClassName: "high-priority"
